@@ -1,4 +1,4 @@
-FROM golang:1.15 as builder
+FROM public.ecr.aws/bitnami/golang:1.15 as builder
 WORKDIR /src
 COPY go.* /src/
 RUN go env -w GOPROXY=direct
